@@ -1,0 +1,8 @@
+create database tpa;
+use tpa;
+create table admin (name varchar(15), password varchar(15));
+insert into admin values('admin','admin');
+create table tpa (name varchar(15), password varchar(15));
+insert into tpa values ('tpa','tpa');
+create table fileupload(id int AUTO_INCREMENT PRIMARY KEY,enkey varchar(20),uid varchar(10),fname varchar(15),fid varchar(15),size varchar(15),date date,ff blob,owner varchar(15),fileid blob,block1 varchar(20),block2 varchar(20),block3 varchar(20),meta1 varchar(30),meta2 varchar(30),meta3 varchar(30),status varchar(30));
+create table user (id int AUTO_INCREMENT PRIMARY KEY, name varchar(15),userid varchar(15),pass varchar(15),mobile varchar(15),email varchar(30),date varchar(15), key1 varchar(15));
